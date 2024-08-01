@@ -74,7 +74,7 @@ section {
     width: 85vw;
     height: auto;
     margin: 0 auto 2.5rem auto;
-    padding: 2rem 20px;
+    padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.425);
     display: flex;
@@ -105,9 +105,14 @@ section {
 
 #home p {
     font-size: 1.2rem;
-
 }
 
+.alert{
+    background-color: var(--color1-green);
+    width: 30rem;
+    border: 1px solid ;
+    border-radius: 1rem;
+}
 
 
 #about {
@@ -125,9 +130,13 @@ section {
 }
 
 
-#about p, #review p{
+#about p
+{
     font-size: 1.2rem;
     line-height: 1.2;
+    width: 80%;
+    text-align: center;
+    margin: .5rem 1rem .5rem 1rem;
 }
 
 #colleges {
@@ -167,7 +176,6 @@ section {
 .clg:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 8px rgb(0, 0, 0);
-
 }
 
 .clg img {
@@ -189,6 +197,7 @@ section {
 .clg h2 {
     margin: 10px;
     font-size: 1.5em;
+    color: var(--color1-green);
 }
 
 .clg p {
@@ -198,32 +207,42 @@ section {
 
 /* reviews section */
 #review {
+    text-wrap: wrap;
     /* width: 85vw; */
-    background-color: #f4f4f4;
-    padding: 2rem 0;
-    margin-top: 2rem;
-    border-radius: 10px;
 }
 
 
-#review p {
-    margin-bottom: 1em;
-    line-height: 1.6;
+#review-info {
+    width: 70%;
+    /* margin-bottom: 1em; */
+    /* line-height: 1.6; */
+    font-size: 1.2rem;
+    line-height: 1.2;
+    text-align: center;
+    /* padding: 0 1rem 1rem 1rem; */
+    margin: .5rem 1rem 1rem 1rem;
 }
 
 .review-parent {
     display: flex;
-    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-around;
     gap: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    /* width: 55rem; */
+    margin: 1rem;
 }
 
 .review-card {
     background-color: #fff;
+    /* width: 55rem; */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.404);
+    transition: .4s;
 }
 
 .review-card h2 {
@@ -240,7 +259,6 @@ section {
 footer {
     bottom: 0;
     padding: 10px;
-    /* width: 100%; */
     height: 20vh;
     background-color: var(--color1-green);
     color: white;
@@ -250,7 +268,7 @@ footer {
     align-items: center;
     justify-content: center;
     font-family: var(--font1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.425);
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.253);
 
 }
 
@@ -268,6 +286,11 @@ footer a {
     padding: 5px;
     color: white;
     /* text-align: center; */
+}
+.icons a:hover {
+    transform: translateY(-3px);
+    color: #b4b4b4;
+    transition: .5s;
 }
 
 footer p {
