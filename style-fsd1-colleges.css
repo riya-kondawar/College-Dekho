@@ -1,4 +1,4 @@
-/*  */
+/* fsd Task 1:- Colleges in Pune css new */
 
 
 :root {
@@ -37,7 +37,7 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
-    /* box-shadow: 0 0 4px 8px rgb(0, 0, 0); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.425);
 }
 
 header nav ul {
@@ -68,66 +68,70 @@ header nav a:hover {
     text-decoration: underline 2px solid white;
 }
 
-.home {
-    top: 20rem;
-    width: 85vw;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    color: #473636;
-    text-align: center;
-    padding: 0 20px;
-
-    background-color: #fff;
-    padding: 2em;
-    margin-bottom: 2em;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.home h1 {
-    font-size: 2.5rem;
-    margin: 0.5rem 1rem;
-    padding: 0.5rem 1rem;
-}
-
-.home p {
-    font-size: 1.2rem;
-}
-
 section {
     background-color: #fff;
-    padding: 2em 0;
+    padding: 2rem 0;
     width: 85vw;
     height: auto;
-    margin: 0 auto 2rem auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 2.5rem auto;
+    padding: 2rem 20px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.425);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+#home {
+    height: 90vh;
+    color: #333;
+    text-align: center;
+    text-align: center;
+
+    background-color: #fff;
+    /* padding: 2em; */
+    /* margin-bottom: 2em; */
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.425);
+
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin: 0 1rem;
+    padding: 0 1rem;
+    line-height: 4rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+
+}
+
+
 
 #about {
     /* max-width: 50rem; */
     background-color: var(--color1-green);
-    padding: 2rem;
-    margin-bottom: 2rem;
+    /* padding: 2rem; */
+    color: white;
 }
 
-#about h1 {
-    font-size: 2rem;
-    margin: .5rem 1rem;
-    padding: .5rem 1rem;
-}
-
-#about p {
-    line-height: 1.6;
+#about h1, #colleges h1, #review h1 {
+    font-size: 2.4rem;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
 }
 
 
-section .colleges {
-    /* width: 85vw; */
+#about p, #review p{
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+#colleges {
+    width: 85vw;
     height: auto;
     background-color: #fff;
     display: flex;
@@ -135,26 +139,21 @@ section .colleges {
     align-items: center;
 }
 
-.colleges h1 {
-    font-size: 2rem;
-    margin: 0.5rem 1rem;
-    padding: 0.5rem 1rem;
-    text-align: center;
-}
-
 /* parent */
-.clgs {
-    /* display: flex; */
+#colleges .clgs {
+    /* width: 7; */
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 1rem;
 }
 
 /* child-card */
-.clg {
+#colleges .clgs .clg {
     background-color: #fff;
     margin: 20px;
     width: 60rem;
+    height: 20rem;
     border: 1px solid #ddd;
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -167,22 +166,23 @@ section .colleges {
 
 .clg:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+
 }
 
 .clg img {
-    width: 32rem;
-    height: 25rem;
+    width: 50%;
+    height: inherit;
     object-fit: cover;
     border-right: 1px solid #ddd;
     border-radius: 1rem 0 0 1rem;
 }
 
 .card-info {
-    width: 30rem;
-    height: auto;
+    width: 50%;
+    height: 18rem;
     padding: 1rem;
-    margin: 1rem;
+    margin: 0 1rem;
     /* border: 2px solid black; */
 }
 
@@ -197,30 +197,21 @@ section .colleges {
 }
 
 /* reviews section */
-
-
-.review-sect{
-    width: 85vw;
-}
-#reviews {
+#review {
+    /* width: 85vw; */
     background-color: #f4f4f4;
     padding: 2rem 0;
     margin-top: 2rem;
     border-radius: 10px;
 }
 
-#reviews h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
 
-#reviews p {
+#review p {
     margin-bottom: 1em;
     line-height: 1.6;
 }
 
-.reviews {
+.review-parent {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -259,7 +250,8 @@ footer {
     align-items: center;
     justify-content: center;
     font-family: var(--font1);
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.425);
+
 }
 
 .icons {
