@@ -1,4 +1,4 @@
-# fsd1-college-website
+# fsd1-colleges-in-Pune-website
  
 This Website shows few selected colleges in Pune. 
 I have used pure HTML and CSS for this project. 
